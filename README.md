@@ -1,15 +1,14 @@
-# [yande.re](https://yande.re/post) refine
+# [yande.re](https://yande.re/post) refine - userscript
 
-Install from: https://greasyfork.org/en/scripts/397612-yande-re-refine (**login required**)
+Install from: [Greasy Fork](https://greasyfork.org/en/scripts/397612-yande-re-refine) (**login required**)
 
-Chrome extension: https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo
+Chrome extension: [Tampermonkey](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
 
 <details>
+<summary>Screenshot (<b>NSFW</b>)</summary>
 
-<summary>Screenshot (**NSFW**)</summary>
-
-![](https://greasyfork.org/system/screenshots/screenshots/000/019/592/original/Screen_Shot_2020-03-15_at_10.18.48_AM-min_%281%29.jpg?1584239364)
+<img src="https://greasyfork.org/system/screenshots/screenshots/000/019/592/original/Screen_Shot_2020-03-15_at_10.18.48_AM-min_%281%29.jpg?1584239364"/>
 
 </details>
 
