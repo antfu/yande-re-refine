@@ -1,0 +1,10 @@
+{
+  "name": "yande-re-refine",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "*",
+    "eslint": "*"
+  }
+}
