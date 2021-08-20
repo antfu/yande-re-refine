@@ -304,20 +304,20 @@ function injectStyle() {
 #loader { padding: 10px; text-align: center; }
 
 .hidden { display: none !important; }
-.preivew-dialog { position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; background: rgba(0,0,0,0.7); z-index: 100; }
-.preivew-dialog iframe { position: absolute; height: 90vh; width: 80vw; top: 50%; left: 50%; transform: translate(-50%, -50%); background: grey; border: none; border-radius: 5px; overflow: hidden; }
-.preivew-dialog .image-host { position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; overflow: auto; text-align: center; }
-.preivew-dialog .image-host img { margin: auto; }
-.preivew-dialog .image-host img.loading { filter: blur(3px); height: 100vh; }
-.preivew-dialog .image-host.full { overflow: hidden }
-.preivew-dialog .image-host.full img { max-width: 100vw; max-height: 100vh; }
+.preview-dialog { position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; background: rgba(0,0,0,0.7); z-index: 100; }
+.preview-dialog iframe { position: absolute; height: 90vh; width: 80vw; top: 50%; left: 50%; transform: translate(-50%, -50%); background: grey; border: none; border-radius: 5px; overflow: hidden; }
+.preview-dialog .image-host { position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; overflow: auto; text-align: center; }
+.preview-dialog .image-host img { margin: auto; }
+.preview-dialog .image-host img.loading { filter: blur(3px); height: 100vh; }
+.preview-dialog .image-host.full { overflow: hidden }
+.preview-dialog .image-host.full img { max-width: 100vw; max-height: 100vh; }
 `
   document.body.appendChild(s)
 }
 
 function initPreviewIframe() {
   previewDialog = document.createElement('div')
-  previewDialog.addClassName('preivew-dialog hidden')
+  previewDialog.addClassName('preview-dialog hidden')
   previewDialog.onclick = (e) => {
     if (e.target === previewDialog)
       previewDialog.classList.toggle('hidden', true)
