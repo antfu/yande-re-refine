@@ -549,7 +549,8 @@ function getFavoritesLike() {
 
 function isViewingFavorites() {
   const fav = getFavoritesLike()
-  if (!fav) return false
+  if (!fav)
+    return false
 
   const a = (new URL(fav).searchParams.get('tags') || '')
     .toLowerCase()
@@ -560,7 +561,7 @@ function isViewingFavorites() {
     .split(' ')
     .sort()
 
-  return a[0] === b[0] && a[1] === b[1]
+  return a[0] && a[0] === b[0] && a[1] === b[1]
 }
 
 async function vote(id, score) {
