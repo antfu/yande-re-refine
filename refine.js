@@ -14,8 +14,8 @@
 
 // You can found alternatives in https://gist.github.com/jimmywarting/ac1be6ea0297c16c477e17f8fbe51347
 const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+const CORS_ENABLED = false
 const CACHE_ENABLED = true
-const CORS_ENABLED = true
 const CACHE_ONLY_LIKE = true
 
 const STORAGE_KEY = 'yandere-refine-liked'
@@ -276,7 +276,7 @@ function injectGlobalStyle() {
 body { padding: 0; }
 #header { margin: 0 !important; text-align: center; }
 #header ul { float: none !important; display: inline-block;}
-#content > div:first-child > div.sidebar { position: fixed; left: 0; top: 0; bottom: 0; overflow: auto !important; z-index: 2; width: 200px !important; transform: translate(-200px, calc(-100vh + 30px)); border-bottom-right-radius: 30px; background: #171717dd; transition: all .2s ease-out; float: none !important; padding: 15px; }
+#content > div:first-child > div.sidebar { position: fixed; left: 0; top: 0; bottom: 0; overflow: auto !important; z-index: 2; width: 250px !important; transform: translate(-246px, 0); background: #171717dd; transition: all .2s ease-out; float: none !important; padding: 15px; }
 #content > div:first-child > div.sidebar:hover { transform: translateX(0); }
 div.content { width: 100vw; text-align: center; float: none }
 div.footer { clear: both !important; }
@@ -427,6 +427,7 @@ function initDOM() {
 function addImages(images) {
   const gallery = document.getElementById('gallery')
   const RADIO = Math.round(window.innerWidth / SUGGEST_WIDTH)
+
   images.forEach((info, i) => {
     const idx = imagesList.length + i
     let row = gallery.querySelector('.row:last-child:not(.full)')
