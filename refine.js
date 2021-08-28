@@ -8,7 +8,7 @@
 // @include        *://konachan.tld/*2
 // @include        *://yande.re/*
 // @include        *://chan.sankakucomplex.com/*
-// @version        2021.08.21.a
+// @version        2021.08.28.a
 // @grant          none
 // ==/UserScript==
 
